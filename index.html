@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<style>
+	.item1 {grid-area: picture; }
+	.item2 {grid-area: intro; }
+	.item3 {grid-area: statement; }
+	
+	.grid-container {
+		display: grid;
+		grid-template-areas:
+			'picture'
+			'intro '
+			'statement ';
+		grid-gap: 10px;
+		padding: 10px;
+	}
+	.grid-container > div {
+		text-align: center;
+		vertical-align: middle;
+		padding: 20px;
+		font-size: 36px;
+	}
+	
+	.grid-container > div > h1{
+		padding-top: 5px;
+		font-size: 96px;
+		font-family: Playbill, Times New Roman, sans-serif;
+		color: #fd67bb;
+	}
+	.grid-container > div > img {
+		width: 100%;
+		float: center;
+		height: auto; 
+		margin: 0px 0px 0px 0px;
+		filter: saturate(250%);
+	}
+	
+	#borderimg {
+		margin: auto;
+	    border: 70px solid transparent;
+	    border-image: url('border.jpg') round;
+	    border-image-slice: 20%;
+	    height:525px;
+	    width:725px;
+	    display:inline-block;
+	}
+</style>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Sam's Dance Center</title>
+	<link href="Reset.css" rel="stylesheet"/>
+	<link href="FinalProjectStyles.css" rel="stylesheet"/>
+</head>
+
+<body>
+	<header>
+		<img src="Header.jpg" alt="Header">
+		<div class="topnav" id="myTopnav">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<div class="dropdown">
+						<button class="dropbtn">Programs 
+						  <i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+						  <a href="Styles.html">Styles</a>
+						  <a href="Competition.html">Competition</a>
+						  <a href="Recreational.html">Recreational</a>
+						</div>
+					</div> 
+					<li><a href="Staff.html">Staff</a></li>
+					<li><a href="News.html">News</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+					<a href="javascript:void(0);" style="font-size:15px;" 
+					class="icon" class="icon" onclick="myFunction()">&#9776;</a>
+				</ul>	
+			</nav>
+		</div>
+	</header>
+	
+	<div class="grid-container">
+		<div class="item1" id="borderimg">
+			<figure>
+				<img src="group1.jpg" alt="" />
+				<figcaption>  Sam's Dance Center 2018 Competition Team</figcaption>
+			</figure></div>
+		<div class="item2"><h1>Welcome to Sam's Dance Center</h1></div>
+		<div class="item3">
+			<p>
+				Our mission is to provide children with an amazing escape reality as we allow them
+				to have fun doing what they love. They are trained to one day, hopefully make dance
+				a profession. We have some of the best staff out there, that care for the students, 
+				yet encourage their inquisitive minds regarding how to grow and use their bodies to 
+				convey messages. Our dancers have won National Championships and Regional Championships
+				and continue to get better and better each year. Please let us join in you or your child's
+				journey to the big stage.
+			</p>
+		</div> 
+	</div>
+	
+	<footer>
+		<h1>Sam's Dance Center</h1> <br/>
+		<h2>Where DREAMS Come True</h2>
+		<a href="#" ><img src="instagram.jpg" alt="instagram" > </a>
+		123 Main St.<br/>
+		East Islip, NY 11730<br/>
+		Email: <a href="mailto:samsdancecenter@example.com">samsdancecenter@example.com</a><br/>
+		Phone: <a href="tel:+16315812947">(631)581-2947</a>
+	</footer>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+</body>
+</html>

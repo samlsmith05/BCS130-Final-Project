@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<style>
+	.item1 {grid-area: title; }
+	.item2 {grid-area: comps; }
+	.item3 {grid-area: attire; }
+	.item4 {grid-area: recital;}
+	
+	.grid-container {
+		display: grid;
+		grid-template-areas:
+			'title'
+			'comps '
+			'recital'
+			'attire';
+		grid-gap: 10px;
+		padding: 10px;
+	}
+	.grid-container > div {
+		text-align: center;
+		vertical-align: middle;
+		padding: 20px;
+		font-size: 36px;
+	}
+	
+	.grid-container > div > h1{
+		padding-top: 5px;
+		font-size: 128px;
+		font-family: Niagra, Times New Roman, sans-serif;
+		color: #fd67bb;
+	}
+	.grid-container > div > h2{
+		font-size: 96px;
+		font-family: Spoiled, Times New Roman, sans-serif;
+		color: #fd67bb;
+	}
+	
+	.item2 > table {
+		width: 100%;
+		border: double;
+		border-width: 5px;
+	}
+	.item2 > table > thead > tr > th{
+		padding: 10px;
+		font-style: bold;
+		border: double;
+		border-width: 5px;
+	}
+	.item2 > table > tbody > tr > td{
+		padding: 10px;
+		border: double;
+		border-width: 5px;
+	}
+	
+</style>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Sam's Dance Center - News</title>
+	<link href="Reset.css" rel="stylesheet"/>
+	<link href="FinalProjectStyles.css" rel="stylesheet"/>
+</head>
+
+<body>
+	<header>
+		<img src="Header.jpg" alt="Header">
+		<div class="topnav" id="myTopnav">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<div class="dropdown">
+						<button class="dropbtn">Programs 
+						  <i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+						  <a href="Styles.html">Styles</a>
+						  <a href="Competition.html">Competition</a>
+						  <a href="Recreational.html">Recreational</a>
+						</div>
+					</div> 
+					<li><a href="Staff.html">Staff</a></li>
+					<li><a href="News.html">News</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+					<a href="javascript:void(0);" style="font-size:15px;" 
+					class="icon" class="icon" onclick="myFunction()">&#9776;</a>
+				</ul>	
+			</nav>
+		</div>
+	</header>
+	
+	<div class="grid-container">
+		<div class="item1"><h1>News</h1></div>
+		<div class="item2">
+			<h2>Competition Dates and Locations</h2></br>
+			<table border="1">
+			<thead>
+				<tr>
+					<th>Dates</th>
+					<th>Location</th>
+					<th>Competition</th>
+					<th>Link</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>March 28-31 </td>
+					<td>St.John the Baptist</td>
+					<td>Dance X Plosion</td>
+					<td> <a href="dancexplosiontalent.com/">dancexplosiontalent.com</a></td>
+				</tr>
+				<tr>
+					<td>April 26-28 </td>
+					<td>West Islip High School</td>
+					<td>Beyond the Stars</td>
+					<td> <a href="beyondthestarscompetition.com/">beyondthestarscompetition.com</a></td>
+				</tr>
+				<tr>
+					<td>May 3-5</td>
+					<td>St. John the Baptist</td>
+					<td>Edge Dance Competition</td>
+					<td> <a href="edgetalentcompetition.com/">edgetalentcompetition.com</a></td>
+				</tr>
+				<tr>
+					<td>May 17-19</td>
+					<td>Holy Trinity High School</td>
+					<td>KAR</td>
+					<td> <a href="dancekar.com/">dancekar.com</a></td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		<div class="item3">
+			<h2>Recital Forms</h2>
+			<p>
+				All forms and documents regarding the recital have been sent out. Please check the mail
+				and let us know if you did not recieve. All forms have due dates listed on them that
+				can not be missed. If you do, there unfortunately is nothing we can do.
+			</p>
+		</div> 
+		<div class="item4">
+			<h2>Attire</h2>
+			<p>
+				All the correct attire must be worn to classes. Recreational students must wear pink 
+				or black clothing and the correct shoes. Competition students must wear black ONLY clothing
+				to class as well as the correct shoes. If you are not prepared, you are not allowed
+				to take class.
+			</p>
+		</div> 
+	</div>
+	
+	<footer>
+		<h1>Sam's Dance Center</h1> <br/>
+		<h2>Where DREAMS Come True</h2>
+		<a href="#" ><img src="instagram.jpg" alt="instagram" > </a>
+		123 Main St.<br/>
+		East Islip, NY 11730<br/>
+		Email: <a href="mailto:samsdancecenter@example.com">samsdancecenter@example.com</a><br/>
+		Phone: <a href="tel:+16315812947">(631)581-2947</a>
+	</footer>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<style>
+	.item1 {grid-area: picture; }
+	.item2 {grid-area: intro; }
+	.item3 {grid-area: statement; }
+	
+	.grid-container {
+		display: grid;
+		grid-template-areas:
+			'picture intro'
+			'picture statement '
+			'picture statement ';
+		grid-gap: 10px;
+		padding: 10px;
+		background-image: linear-gradient(to right, #ff00af , white);
+	}
+	.grid-container > div {
+		text-align: center;
+		vertical-align: middle;
+		padding: 20px;
+		font-size: 36px;
+		border: double;
+		border-radius: 25px;
+	}
+	
+	.grid-container > div > h1{
+		padding-top: 5px;
+		font-size: 96px;
+		font-family: Niagra, Times New Roman, sans-serif;
+		color: black;
+	}
+	.grid-container > div > p{
+		padding-top: 15px;
+		font-size: 24px;
+		font-family: Times New Roman, sans-serif;
+		color: black;
+	}
+	
+	.grid-container > div > img {
+		width: 100%;
+		float: center;
+		height: auto; 
+		margin: 0px 0px 0px 0px;
+		vertical-align: center;
+		filter: contrast(150%);
+	}
+</style>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Sam's Dance Center - Recreational</title>
+	<link href="Reset.css" rel="stylesheet"/>
+	<link href="FinalProjectStyles.css" rel="stylesheet"/>
+</head>
+
+<body>
+	<header>
+		<img src="Header.jpg" alt="Header">
+		<div class="topnav" id="myTopnav">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<div class="dropdown">
+						<button class="dropbtn">Programs 
+						  <i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+						  <a href="Styles.html">Styles</a>
+						  <a href="Competition.html">Competition</a>
+						  <a href="Recreational.html">Recreational</a>
+						</div>
+					</div> 
+					<li><a href="Staff.html">Staff</a></li>
+					<li><a href="News.html">News</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+					<a href="javascript:void(0);" style="font-size:15px;" 
+					class="icon" class="icon" onclick="myFunction()">&#9776;</a>
+				</ul>	
+			</nav>
+		</div>
+	</header>
+	
+	<div class="grid-container">
+		<div class="item1"><img src="Recreational.png" alt="" /></div>
+		<div class="item2"><h1>Our Recreational Team Program</h1></div>
+		<div class="item3">
+			<p>
+				The recreational dance program at Sam's Dance Center is available to anyone who wants
+				to dance and enjoys dancing. This program is much less of a commitment, as classes only
+				meet once a week. However, they will expand their knowledge and continue to grow. 
+			</p>
+			<p>
+				These dancers will perform in our annual recital that can be attended by the entire
+				family. It is a great way to make friends that last a lifetime and enjoy the week.	
+			</p>
+		</div> 
+	</div>
+	
+	<footer>
+		<h1>Sam's Dance Center</h1> <br/>
+		<h2>Where DREAMS Come True</h2>
+		<a href="#" ><img src="instagram.jpg" alt="instagram" > </a>
+		123 Main St.<br/>
+		East Islip, NY 11730<br/>
+		Email: <a href="mailto:samsdancecenter@example.com">samsdancecenter@example.com</a><br/>
+		Phone: <a href="tel:+16315812947">(631)581-2947</a>
+	</footer>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+</body>
+</html>

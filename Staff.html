@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<style>
+	.item1 {grid-area: title; }
+	.item2 {grid-area: pic1; }
+	.item3 {grid-area: bio1; }
+	.item4 {grid-area: pic2; }
+	.item5 {grid-area: bio2; }
+	.item6 {grid-area: pic3; }
+	.item7 {grid-area: bio3; }
+	
+	.grid-container {
+		display: grid;
+		grid-template-areas:
+			'title title'
+			'pic1 bio1'
+			'pic2 bio2'
+			'pic3 bio3';
+		grid-gap: 45px;
+		padding: 10px 40px 35px 30px;
+	}
+	.grid-container > div {
+		text-align: center;
+		vertical-align: middle;
+		padding: 20px;
+		font-size: 36px;
+		border: double;
+		border-radius: 25px;
+	}
+	.item1{
+		box-shadow: 5px 5px black;
+	}
+	
+	.grid-container > div > h1{
+		padding-top: 5px;
+		font-size: 96px;
+		font-family: Niagra, Times New Roman, sans-serif;
+		color: #fd67bb;
+		text-shadow: 2px 2px black;
+	}
+	.grid-container > div > p{
+		padding-top: 15px;
+		font-size: 24px;
+		font-family: Times New Roman, sans-serif;
+		color: black;
+		
+	}
+	
+	.grid-container > div > img {
+		width: 100%;
+		height: 100%;
+		float: center;
+		margin: 0px 0px 0px 0px;
+		vertical-align: center;
+		position: relative;
+		opacity: 0.5;
+	}
+	
+	.grid-container > div > img:hover{
+		opacity: 1.0;
+	}
+	#pic1, #pic2, #pic3 {
+		perspective: 450px;
+		transform-style: preserve-3d;
+		transform: skewY(10deg);
+	}
+	#bio1, #bio2, #bio3{
+		perspective: 450px;
+		transform-style: preserve-3d;
+		transform: skewX(10deg);
+	}
+</style>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Sam's Dance Center - Staff</title>
+	<link href="Reset.css" rel="stylesheet"/>
+	<link href="FinalProjectStyles.css" rel="stylesheet"/>
+</head>
+
+<body>
+	<header>
+		<img src="Header.jpg" alt="Header">
+		<div class="topnav" id="myTopnav">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<div class="dropdown">
+						<button class="dropbtn">Programs 
+						  <i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+						  <a href="Styles.html">Styles</a>
+						  <a href="Competition.html">Competition</a>
+						  <a href="Recreational.html">Recreational</a>
+						</div>
+					</div> 
+					<li><a href="Staff.html">Staff</a></li>
+					<li><a href="News.html">News</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+					<a href="javascript:void(0);" style="font-size:15px;" 
+					class="icon" class="icon" onclick="myFunction()">&#9776;</a>
+				</ul>	
+			</nav>
+		</div>
+	</header>
+	
+	<div class="grid-container">
+		<div class="item1"><h1>Our Staff</h1></div>
+		<div class="item2" id="pic1"><img src="TravisWall.png" alt="" /></div>
+		<div class="item3" id="bio1">
+			<h2>Travis Wall</h2>
+			<p>
+				Travis is the winner of the 2015 Emmy Award for Outstanding Choreography. He was the 
+				runner-up for the Fox reality show So You Think You Can Dance Season 2, and is currently 
+				a resident choreographer for the national dance competition show. He is a five-time Emmy 
+				nominated choreographer for his work on So You Think You Can Dance and Dancing with the 
+				Stars. He choreographed the music video for Carrie Underwood's "Something In The Water", 
+				which won the CMT Video of the Year, as well as stage shows for Justin Bieber and Demi 
+				Lovato. Additional TV credits include choreographing the 82nd Academy Awards, Disneyland's 
+				60th Anniversary Special on ABC, the 2010 MTV Video Music Awards and an episode of Pretty 
+				Little Liars featuring Maddie Ziegler. Feature Film credits include choreography for The 
+				Wedding Ringer starring Kevin Hart and the contemporary numbers for the feature film Step 
+				Up Revolution. He had the privilege of working with First Lady, Michelle Obama on her Let's
+				Move Campaign where he created the GimmeFive routine that was performed on Ellen and at 
+				The White House. Travis teaches with NUVO Dance Convention. He is the lyrical/contemprorary
+				teacher at Sam's Dance Center.
+			</p>
+		</div> 
+		<div class="item4" id="pic2"><img src="Twitch.jpg" alt="" /></div>
+		<div class="item5" id="bio2">
+			<h2>Twitch</h2>
+			<p>
+				Twitch was born in Montgomery, Alabama. He got his nickname, as a child, from popping 
+				and ticking, when he couldn't sit still. In 2000, he graduated from Lee High School 
+				in Montgomery, Alabama. He went on to study Dance Performance at Southern Union State
+				Community College in Wadley, Alabama and Chapman University. In 2003, he was a 
+				semifinalist on MTV's The Wade Robson Project (2003). He was also a runner-up on the
+				television talent competition, Star Search (2003).He has choreographed for South Korean
+				pop/R&B singer, Se7en. In December 2009, he debuted on the comedy collective, 
+				TheKommune.com, in several sketch-series videos. He has taught dance classes and held 
+				workshops all over the world. In season 3 of So You Think You Can Dance (2005), 
+				tWitch was beat out by Hokuto 'Hok' Konishi and didn't make the top 20. He returned
+				the following season and not only made it into the top 20, but was a runner-up in the 
+				Finals. He went on to tour with the top 10 finalists, where he performed, with Katee
+				Shean, the Emmy-nominated piece, "Mercy", choreographed by Mia Michaels. In 2010, he 
+				was chosen as one of the 10 All-Star dancers for SYTYCD's season 7. He is the hip hop 
+				teacher at Sam's Dance Center.
+			</p>
+		</div> 
+		<div class="item6" id="pic3"><img src="Mia.png" alt="" /></div>
+		<div class="item7" id="bio3">
+			<h2>Mia Michaels</h2>
+			<p>
+				Mia Michaels is a three-time ‘Emmy Award’ winning choreographer, artistic director, 
+				designer, author, motivational speaker, body activist and a visionary. She is best 
+				known for her contemporary choreography for the ‘Fox TV’s’ popular reality show 
+				‘So You Think You Can Dance.’ Born and raised in Florida, US, she began dancing at a
+				very young age of 3. She has learnt the art-form at a number of prestigious dance 
+				schools such as ‘Miami Performing Arts Center,’ ‘Interlochen Arts Academy at Michigan,’
+				‘Jacob’s Pillow’ at Massachusetts, among others. In the beginning of her career, she 
+				choreographed touring shows of such artists as Madonna and Celine Dion, and received 
+				applause for her creative work. During her illustrious career she has choreographed 
+				‘Cirque du Soleil’s’ world tour ‘Delirium’ and has also worked with Ricky Martin, Prince,
+				Anna Vassi, among many others. Michaels is best recognized for her dynamic, impassioned,
+				lyrical dance creations on the TV show ‘So You Think You Can Dance,’ for which she has
+				won 3 ‘Emmy Awards’ (2007, 2010 & 2011). She has a number of commercials to her credit
+				and has also choreographed for movie adaptation of Broadway musical, ‘Rock of Ages’ and
+				successful Broadway musical, ‘Finding Neverland.’ She has several accomplishments to her
+				credit and now, she is also a published author. She is the musical theater and jazz teacher
+				at Sam's Dance Center.
+			</p>
+		</div> 
+	</div>
+	
+	<footer>
+		<h1>Sam's Dance Center</h1> <br/>
+		<h2>Where DREAMS Come True</h2>
+		<a href="#" ><img src="instagram.jpg" alt="instagram" > </a>
+		123 Main St.<br/>
+		East Islip, NY 11730<br/>
+		Email: <a href="mailto:samsdancecenter@example.com">samsdancecenter@example.com</a><br/>
+		Phone: <a href="tel:+16315812947">(631)581-2947</a>
+	</footer>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+</body>
+</html>
